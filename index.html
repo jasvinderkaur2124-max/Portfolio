@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Home</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+<!-- Cursor Circle -->
+
+<div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
+
+
+<!-- Navbar -->
+<nav>
+  <img src="images/jk logo.png">
+  <ul>
+     <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Bubbles -->
+<div class="bubbles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<canvas id="bg-canvas"></canvas>
+<!-- Hero Section -->
+<section class="hero ">
+
+  <!-- Left -->
+  <div class="left">
+    <h1>Welcome to<br><span>My Profile</span></h1>
+
+     <p class="typing-text">
+    <span id="typing"></span>
+  </p>
+
+
+
+    <div class="about-buttons">
+       
+        <button>View Portfolio</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+
+
+  <!-- Center -->
+  <div class="center">
+    <img src="images/girl.png" alt="Profile Image" class="profile-img">
+  </div>
+
+  <!-- Right -->
+  <div class="right">
+    <p>
+      I am a creative designer focused on<br>
+      modern UI/UX experiences.<br>
+      I design clean, minimal & elegant<br>
+      digital products with passion.
+    </p>
+  </div>
+
+</section>
+
+
+
+<!-- ABOUT SECTION -->
+<section class="about-section ">
+
+  <div class="about-container">
+
+
+
+        <div class="about-right animate-right">
+      <h1>
+        A PROFESSIONAL OVERVIEW OF <br>
+        <span>MY BACKGROUND</span> AND EXPERTISE
+      </h1>
+
+      <p>
+        I am a creative UI/UX designer focused on
+        modern, clean and user-centric design.
+      </p>
+
+      <div class="about-buttons">
+     
+        <button>DOWNLOAD CV</button>
+      </div>
+    </div>
+
+    <!-- LEFT -->
+    <div class="about-left animate-left">
+      <h6 class="about-tag">— ABOUT MYSELF</h6>
+
+     
+
+      <div class="skills">
+        <div class="skill1 delay3">
+          <h2>98%</h2>
+        <img decoding="async" src="https://revox.baseecom.com/wp-content/uploads/2026/01/figma.png" alt="Figma">
+          <p>FIGMA</p>
+        </div>
+        <div class="skill1 delay4">
+          <h2>90%</h2>
+          <img decoding="async" src="https://revox.baseecom.com/wp-content/uploads/2026/01/ps.png" alt="Photoshop"> 
+          <p>PHOTOSHOP</p>
+        </div>
+        <div class="skill1 delay5">
+          <h2>79%</h2>
+          <img decoding="async" src="https://revox.baseecom.com/wp-content/uploads/2026/01/ai.png" alt="Illustrator"> 
+          <p>ILLUSTRATOR</p>
+        </div>
+        <div class="skill1 delay6">
+          <h2>93%</h2>
+          <img decoding="async" src="https://revox.baseecom.com/wp-content/uploads/2026/01/xd.png" alt="Adobe_Xd">
+          <p>ADOBE XD</p>
+        </div>
+        <div class="skill1 delay6">
+          <h2>89%</h2>
+          <img decoding="async" src="https://revox.baseecom.com/wp-content/uploads/2026/01/sketch.png" alt="Sketch">
+          <p>SKETCH</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+
+
+  </div>
+
+</section>
+
+
+
+<!-- SECOND SECTION -->
+<section class="about-section ">
+
+  <h2 class="about-title">What I Do</h2>
+
+  <div class="about-cards">
+
+    <div class="card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3> UI / UX Design</h3>
+      <p>Modern, clean and user-friendly interface designs.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Responsive & animated websites using HTML, CSS & JS.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-palette"></i>
+      <h3>Graphic Design</h3>
+      <p>Creative branding, posters and social media designs.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="main-gallery">
+  <h2>My Creative Work</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-card" onclick="openPage('branding.html')">
+      <img src="img/branding.jpg">
+      <div class="overlay">Branding</div>
+    </div>
+
+    <div class="gallery-card" onclick="openPage('appdesign.html')">
+      <img src="img/app.jpg">
+      <div class="overlay">App Design</div>
+    </div>
+
+    <div class="gallery-card" onclick="openPage('uidesign.html')">
+      <img src="img/ui.jpg">
+      <div class="overlay">UI Design</div>
+    </div>
+
+    <div class="gallery-card" onclick="openPage('landingpage.html')">
+      <img src="img/landing.jpg">
+      <div class="overlay">Landing Page</div>
+    </div>
+
+    <div class="gallery-card" onclick="openPage('poster.html')">
+      <img src="img/poster.jpg">
+      <div class="overlay">Poster Designs</div>
+    </div>
+
+    <div class="gallery-card" onclick="openPage('webdesign.html')">
+      <img src="img/web.jpg">
+      <div class="overlay">Web Design</div>
+    </div>
+
+
+    <div class="gallery-card" onclick="openPage('webdesign.html')">
+      <img src="img/web.jpg">
+      <div class="overlay">Packaging</div>
+    </div>
+
+
+      <div class="gallery-card" onclick="openPage('webdesign.html')">
+      <img src="img/web.jpg">
+      <div class="overlay">Logo Design</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="portfolio-footer ">
+
+  <div class="footer-content">
+    <h2>Jasvinder KAUR</h2>
+    <p>Creative Designer & Front-End Developer</p>
+
+   <div class="social-links">
+
+  <a href="https://www.instagram.com/jk.designs.___/?hl=en">
+    <i class="fa-brands fa-instagram"></i> 
+
+  <a href="http://linkedin.com/in/jasvinder-kaur-5817ab36b/">
+    <i class="fa-brands fa-linkedin"></i> 
+  </a>
+
+  <a href="https://www.behance.net/jasvinderkaur9">
+    <i class="fa-brands fa-behance"></i> 
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-artstation"></i> 
+  </a>
+
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Jasvinder Kaur. All Rights Reserved.</p>
+  </div>
+
+</footer>
+
+
+
+<button id="scrollTopBtn">↑</button>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
